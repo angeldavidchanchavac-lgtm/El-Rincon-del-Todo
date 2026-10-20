@@ -1,0 +1,139 @@
+@import url('https://googleapis.com');
+
+        body {
+            background-color: #05070f; 
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .titulo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 50px;
+            text-align: center;
+            background: linear-gradient(45deg, #1caff3, #0893de, #021af7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 0px 15px rgba(28, 175, 243, 0.5));
+        }
+
+        .carta {
+            background: #0d111e;
+            border: 1px solid rgba(28, 175, 243, 0.15);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .carta:hover {
+            border-color: #1caff3;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(28, 175, 243, 0.2);
+        }
+
+        .carta h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            margin: 0 0 12px 0;
+            color: #1caff3;
+            text-transform: uppercase;
+        }
+
+        .carta p {
+            font-size: 0.95rem;
+            color: #8fa0c2;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .boton{
+                display: inline-block;
+                padding: 14px 35px;
+                background: transparent;      
+                border: 2px solid #4d99f7;   
+                color: #9bc7f3;               
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 20px;
+                letter-spacing: 2px;
+                font-weight: 600;
+                transition: all 0.4s ease;   
+                border-radius: 4px;          
+        }
+
+            .boton:hover {
+            background: linear-gradient(45deg, #1caff3, #0893de, #021af7);
+            color: #0d0d0d;           
+            border-color: transparent;   
+            box-shadow: 0px 5px 20px rgba(229, 193, 88, 0.4); 
+            transform: translateY(-2px);  
+            }
+
+
+
+
+
+
+
+
+
+    
+        .musica {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .cine {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .libros {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .programacion {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .juegos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            width: 100%;
+        }
+

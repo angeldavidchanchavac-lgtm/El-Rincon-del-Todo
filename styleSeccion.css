@@ -1,0 +1,107 @@
+@import url('https://googleapis.com');
+
+        body {
+            background-color: #05070f; /* Fondo oscuro espacial */
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Título de la página con tu degradado de 3 colores */
+        .titulo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #1caff3, #0893de, #021af7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 0px 15px rgba(28, 175, 243, 0.5));
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        /* Subtítulos de las categorías */
+        .seccion {
+            font-family: 'Orbitron', sans-serif;
+            color: #1caff3;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: 40px 0 20px 0;
+            letter-spacing: 2px;
+            border-left: 4px solid #021af7;
+            padding-left: 12px;
+        }
+
+        /* Rejilla adaptable optimizada para los bloques de 4 tarjetas */
+        .bloques {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            width: 100%;
+        }
+
+        /* Estilo de los cuadros de información */
+        .carta {
+            background: #0d111e;
+            border: 1px solid rgba(28, 175, 243, 0.15);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto visual al pasar el cursor sobre un cuadro */
+        .carta:hover {
+            border-color: #1caff3;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(28, 175, 243, 0.2);
+        }
+
+        .carta h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            margin: 0 0 12px 0;
+            color: #1caff3;
+            text-transform: uppercase;
+        }
+
+        .carta p {
+            font-size: 0.95rem;
+            color: #8fa0c2;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Botón para regresar al menú principal */
+        .boton {
+            margin-top: 60px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            color: #1caff3;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid rgba(28, 175, 243, 0.3);
+            padding: 12px 24px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .boton:hover {
+            background: rgba(28, 175, 243, 0.1);
+            border-color: #1caff3;
+            box-shadow: 0 0 15px rgba(28, 175, 243, 0.2);
+        }
